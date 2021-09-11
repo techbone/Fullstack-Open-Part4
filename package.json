@@ -1,0 +1,24 @@
+{
+  "name": "fsopenpart4",
+  "version": "1.0.0",
+  "description": " \"fsopenpart4backend\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/techbone/Fullstack-Open-Part4.git"
+  },
+  "keywords": [
+    "node",
+    "react",
+    "javascript"
+  ],
+  "author": "Musa Muhammad Etudaye <musaawwaletudaye@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techbone/Fullstack-Open-Part4/issues"
+  },
+  "homepage": "https://github.com/techbone/Fullstack-Open-Part4#readme"
+}
