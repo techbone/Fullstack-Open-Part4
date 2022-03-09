@@ -1,0 +1,15 @@
+### get
+
+GET http://localhost:3003/api/blogs
+
+### post 
+
+POST http://localhost:3003/api/blogs
+content-type:application/json
+
+{
+"title":"Awwal",
+"author":"Musa Muhammad Etudaye",
+"url":"etudaye",
+"likes":10
+}
