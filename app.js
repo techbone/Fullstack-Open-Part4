@@ -9,7 +9,10 @@ const { PORT, MONGODB_URI } = require("./utils/config");
 // const url = `mongodb+srv://Fullstack-Open:${password}@cluster0.ipk8l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 // console.log("connecting to:", url);
 
-const url = MONGODB_URI;
+const url =
+  process.env.NODE_ENV === "test"
+    ? process.env.TEST_MONGODB_URI
+    : process.env.MONGODB_URI;
 mongoose
   .connect(url, {
     useNewUrlParser: true,

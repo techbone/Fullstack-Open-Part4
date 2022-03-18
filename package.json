@@ -4,9 +4,9 @@
   "description": " \"fsopenpart4backend\"",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "test": "NODE_ENV=test jest --verbose --runInBand",
+    "start": "NODE_ENV=production node  node index.js",
+    "dev": "NODE_ENV=development  nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,8 @@
     "nodemon": "^2.0.15"
   },
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
   },
   "jest": {
     "testEnvironment": "node"
