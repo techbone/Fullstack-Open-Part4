@@ -4,10 +4,10 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const { PORT, MONGODB_URI } = require("./utils/config");
 
-// const password = process.argv[2];
+const password = process.argv[2];
 
-// const url = `mongodb+srv://Fullstack-Open:${password}@cluster0.ipk8l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
-// console.log("connecting to:", url);
+const url = `mongodb+srv://Fullstack-Open:${password}@cluster0.ipk8l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+console.log("connecting to:", url);
 
 const url =
   process.env.NODE_ENV === "test"
